@@ -31,8 +31,10 @@ def game():
     #Comparing the score
     if userPts > compPts:
         print("\n\tCONGRATS! YOU WIN!\n")
-    else:
+    elif userPts < compPts:
         print("\n\tCOMPUTER WINS!")
+    else:
+        print("\n\tIT\'S A TIE!")
     return
 
 game()
