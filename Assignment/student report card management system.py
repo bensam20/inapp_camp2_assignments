@@ -1,5 +1,3 @@
-from operator import mod
-
 #Dictionary to store the record with roll number as the key
 studentRecord = {1: ["Abhi",95,94,97,89,95], 2: ["Alan",90,94,85,83,92]}
 
