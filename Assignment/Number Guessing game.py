@@ -1,12 +1,13 @@
-from optparse import Option
 import random as r
 
+#defining the numberGuessGame function
 def numberGuessGame():
     compNum = r.randrange(1,11)
     print(compNum)
     print("I\'ve already guessed one")
     i=0
 
+    #While loop to play 5 times
     while i<5:
         userNum = int(input("Enter your guess: "))
         if userNum not in range(1,11):
@@ -34,6 +35,7 @@ def numberGuessGame():
         i+=1
     return
 
+#defining the startGame function
 def startGame():
     print("Menu\n1 -> Start the Game\n2 -> Exit")
     choice = int(input("Enter your choice: "))
