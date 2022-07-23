@@ -1,8 +1,9 @@
 from operator import mod
 
-
+#Dictionary to store the record with roll number as the key
 studentRecord = {1: ["Abhi",95,94,97,89,95], 2: ["Alan",90,94,85,83,92]}
 
+#function to enter the record
 def createRecord():
     rollNum = int(input("Enter the Student Roll Number: "))
     name = input("Enter Student Name: ")
@@ -15,25 +16,30 @@ def createRecord():
     studentRecord[rollNum] = detaiList
     return
 
+#function to delete the record
 def deleteRecord():
     rollNum = int(input("Enter the Roll Number of the Student to be Deleted: "))
     del studentRecord[rollNum]
     return
 
+#function to modify the record
 def modifyRecord():
     createRecord()
     return
 
+#function to display the records
 def displayRecord():
     for student in studentRecord:
         print(student, studentRecord[student])
     return
 
+#function to display the record of the given roll number
 def displyWithRollnum():
     rollNum = int(input("Enter the Roll Number: "))
     print(studentRecord[rollNum])    
     return
 
+#function that prints the menu
 def printMenu():
     print("""Menu
     1 -> Create a Student Record
@@ -45,6 +51,7 @@ def printMenu():
     choice = int(input("Enter your choice: "))
     return choice
 
+#the report card management function
 def studentReportCardManagementSystem():
     choice = printMenu()
     while(choice != 6):
@@ -66,5 +73,4 @@ def studentReportCardManagementSystem():
         choice = printMenu()
 
 studentReportCardManagementSystem()
-            
-    
+  
