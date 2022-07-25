@@ -12,7 +12,6 @@
 # incrementing no for every patient
 
 #defining the CMS class
-
 class CMS:
     patients = {}
     patientID = 100

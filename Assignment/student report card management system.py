@@ -71,4 +71,3 @@ def studentReportCardManagementSystem():
         choice = printMenu()
 
 studentReportCardManagementSystem()
-  
