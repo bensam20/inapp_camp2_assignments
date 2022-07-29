@@ -150,7 +150,7 @@ def toKZK():
         countTrain_3 = i[0]
 
     if countTrain_3 < 5:
-        bookTicket(3,'KZK')
+        bookTicket(3,4)
     else:
         cursor.execute('''select sum(waiting_list) from passengerDetails
                     where trainID = 3;''')
